@@ -33,7 +33,7 @@ p {
 }
 
 footer {
-  font-size: .85;
-  font-style: italics;
-  margin: 1rem auto;
+  font-size: .85rem;
+  font-style: italic;
+  text-align: center;
 }
