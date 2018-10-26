@@ -1,4 +1,4 @@
-<div align='center'><img src='assets/basic/logoText.jpg' alt='HEADS or TALES' /></div>
+<div align='center'><a href='https://stoddard-david.github.io/heads-or-tales/'><img src='assets/basic/logoText.jpg' alt='HEADS or TALES' /></a></div>
 
 # Welcome
 Heads or Tales is a social choose your path tale you can share with your family and friends. That means you don't just choose the path in a tale; you collaberate to help create the paths in the tale.
