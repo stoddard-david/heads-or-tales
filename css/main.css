@@ -20,11 +20,36 @@
   font-style: italic;
 }
 
-body, html {
+html {
   font-family: 'Old Standard TT', Georgia, serif;
+  font-size: 1.2em;
+  color: #545252;
   
   margin: 0;
   padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 960px;
+  margin: .5rem auto;
+  padding: 0;
+}
+
+h1 {
+   font-size: 1.3rem 
+}
+
+h1.mainPage {
+   font-size: 2.3rem 
+}
+
+h2 {
+   font-size: 2.3rem 
+}
+
+h3 {
+   font-size: 1.7rem; 
 }
 
 p {
@@ -37,3 +62,20 @@ footer {
   font-style: italic;
   text-align: center;
 }
+
+.subHeader {
+  font-style: italic;
+}
+
+.primaryColor {
+   color: #D6B261;
+}
+
+.shadowColor {
+   color: #936F8E;
+}
+
+.center {
+  text-align: center;
+}
+
