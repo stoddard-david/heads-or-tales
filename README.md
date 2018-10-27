@@ -5,7 +5,7 @@ Heads or Tales is a social choose your path tale you can share with your family 
 
 Also, you don't need to install any software on your computer. You just need to download the files and you can enjoy the journey online or off.
 
-## Are you new to GitHub
+## Are you new
 You look at the interface with all the buttons with code tab and pull requests. You don't understand all of this. Don't panic. You can choose from the options below to help on this journey.
 
 ### You want to read the tale
@@ -23,7 +23,10 @@ Go to GitHub to create a new account. Go to the 'Issues' and create/add to issue
 
 Also follow updates and what is being worked on by reading the issues.
 
-You can also go to the Facebook page to help choose the direction of the tale.
+You can also go to our [Facebook](https://www.facebook.com/ChooseHeadsOrTales) page to help choose the direction of the tale.
+
+## What we are working on
+We are at the very beginning of the journey. The basics are being set and the ideas are being put together.
 
 ## What is included
 * HTML
