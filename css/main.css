@@ -29,27 +29,20 @@ html {
   padding: 0;
 }
 
-body {
-  box-sizing: border-box;
-  max-width: 960px;
-  margin: .5rem auto;
-  padding: 0;
+h1,h2,h3 {
+   margin:0;
 }
 
 h1 {
-   font-size: 1.3rem 
-}
-
-h1.mainPage {
-   font-size: 2.3rem 
+   font-size: 2.3rem;
 }
 
 h2 {
-   font-size: 2.3rem 
+   font-size: 1.7rem;
 }
 
 h3 {
-   font-size: 1.7rem; 
+   font-size: 1.33rem; 
 }
 
 p {
@@ -57,10 +50,23 @@ p {
   margin: 0;
 }
 
+header {
+  margin: 0 0 5rem 0;
+  padding: 0 .5rem;
+}
+
+main {
+  max-width: 960px;
+  margin: .5rem auto;
+  padding: 0 .5rem;
+}
+
 footer {
-  font-size: .85rem;
+  font-size: .8rem;
   font-style: italic;
-  text-align: center;
+  text-align: right;
+  margin-top: 3rem;
+  padding: 0 .5rem;
 }
 
 .subHeader {
@@ -79,3 +85,7 @@ footer {
   text-align: center;
 }
 
+#largeLogo {
+  width: 11rem;
+  margin: .3rem 0;
+}
