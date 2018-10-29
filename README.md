@@ -11,7 +11,7 @@ You look at the interface with all the buttons with code tab and pull requests. 
 ### You want to read the tale
 Go to [Heads or Tales](https://stoddard-david.github.io/heads-or-tales/) to read the tale. As updates are made the site will update.
 
-### You want a copy of the tale to read
+### You want a copy on your device
 Go to the green button 'Clone or Download' and select 'Download Zip' from the options. Exact the folder. You can then open the folder. Then double click on index.html. This will open the file in your browser for you to enjoy.
 
 *To update to the latest version, delete the folders on your computer and re-download the files.*
