@@ -35,6 +35,7 @@ h1,h2,h3 {
 
 h1 {
    font-size: 2.3rem;
+   line-height: 2.4rem;
 }
 
 h2 {
@@ -51,7 +52,7 @@ p {
 }
 
 header {
-  margin: 0 0 5rem 0;
+  margin: 0 0 3.5rem 0;
   padding: 0 .5rem;
 }
 
@@ -67,6 +68,66 @@ footer {
   text-align: right;
   margin-top: 3rem;
   padding: 0 .5rem;
+}
+
+input, select, button {
+  font-family: 'Old Standard TT', Georgia, serif;
+  color: #545252;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  
+  padding: .4rem;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: .06rem;
+
+  border: none;
+  background: #D6B261;
+}
+
+/********* LINKS *********/
+
+a {
+  display: block;
+  transition: color .2s;
+  font-weight: bold;
+  text-align: right;
+  padding-top: .66rem;
+}
+
+a:link {
+  color: #D6B261;
+}
+
+a:visited {
+  color: #B28521;
+}
+
+a:hover, a:focus {
+  color: #936F8E;
+}
+
+a:active {
+  color: #936F8E;
+}
+
+.plate {
+  padding: 1rem;
+  border: solid 1px #545252;
+  text-align: center;
+}
+
+.nameplate {
+  border: none;
+  border-bottom: 2px #545252 solid;
+  width: 100%;
+
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
 .subHeader {
