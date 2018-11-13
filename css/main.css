@@ -90,7 +90,6 @@ button {
 }
 
 /********* LINKS *********/
-
 a {
   display: block;
   transition: color .2s;
@@ -113,6 +112,19 @@ a:hover, a:focus {
 
 a:active {
   color: #936F8E;
+}
+
+/********* CLASSES *********/
+.homeLink {
+  display: flex;
+  color: #545252;
+  text-align: left;
+  text-decoration: none;
+  align-items: center;
+}
+
+.homeLink:link, .homeLink:visited, .homeLink:hover, .homeLink:focus , .homeLink:active {
+  color: #545252;
 }
 
 .plate {
@@ -146,7 +158,16 @@ a:active {
   text-align: center;
 }
 
+/********* IDS *********/
 #largeLogo {
   width: 11rem;
   margin: .3rem 0;
 }
+
+#smallLogo {
+  width: 2.5rem;
+  margin: .3rem .3rem;
+}
+
+
+
