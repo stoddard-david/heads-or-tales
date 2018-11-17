@@ -84,9 +84,15 @@ button {
   font-weight: bold;
   color: #FFFFFF;
   letter-spacing: .06rem;
+  border-radius: .2rem;
 
   border: none;
   background: #D6B261;
+  transition: .33s;
+}
+
+button:hover, button:focus, button:active {
+  background: #B28521;
 }
 
 /********* LINKS *********/
@@ -100,14 +106,15 @@ a {
 
 a:link {
   color: #D6B261;
+  transition: .33s;
 }
 
 a:visited {
-  color: #B28521;
+  color: #936F8E;
 }
 
 a:hover, a:focus {
-  color: #936F8E;
+  color: #B28521;
 }
 
 a:active {

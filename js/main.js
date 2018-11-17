@@ -1,6 +1,6 @@
 //Global Variables
 var htReaders = [new Reader()];;
-var htCurrent;
+var htCurrent = 0;
 
 var readerNames = document.getElementById('readerNames');
 var addReader = document.getElementById('addReader');
@@ -17,17 +17,20 @@ function Reader() {
 /*****************FUNCTIONS*****************/
 function loadReaders() {
   htReaders = JSON.parse(localStorage.htReaders);
+  populateNames();
 }
 
 function loadCurrent() {
   htCurrent = JSON.parse(localStorage.htCurrent);
+  readerNames.value = htCurrent;
 }
 
-function addNewStyle() {
+function addNewReader() {
   htCurrent = htReaders.length;
   htReaders[htCurrent] = new Reader();
 
   htReaders[htCurrent].name = newReader.value;
+  newReader.value = ""
   
   var createOption = document.createElement('option');
   createOption.id = 'name' + htCurrent;
@@ -38,18 +41,40 @@ function addNewStyle() {
 
   readerNames.appendChild(createOption); 
   readerNames.value = htCurrent;
+  
+  localStorage.htReaders = JSON.stringify(htReaders);
+  localStorage.htCurrent = JSON.stringify(htCurrent);
+}
+
+function populateNames() {
+  for (i = 1; i<htReaders.length; i++) {
+    var createOption = document.createElement('option');
+    createOption.id = 'name' + i;
+    createOption.value = i;
+      
+    var textnode = document.createTextNode(htReaders[i].name); //Creates text to go in the new element
+    createOption.appendChild(textnode); //Places the element inside an element, as last child
+
+    readerNames.appendChild(createOption);
+  }
+}
+
+function changeReader() {
+  htCurrent = readerNames.value;
+  localStorage.htCurrent = JSON.stringify(htCurrent);
 }
 
 /*****************EVENTS*****************/
-addReader.addEventListener('click', addReaderStyle);
+addReader.addEventListener('click', addNewReader);
+readerNames.addEventListener('change', changeReader);
 
-  /*****************ON PAGE LOAD*****************/
+/*****************ON PAGE LOAD*****************/
 window.onload = function () {
-  if (localStorage.getItem('htReader') != null) {
+  if (localStorage.htReaders !== null && localStorage.htReaders !== undefined) {
     loadReaders();
   }
 
-  if (localStorage.getItem('htCurrent') != null) {
+  if (localStorage.htCurrent !== null && localStorage.htCurrent !== undefined) {
     loadCurrent();
   }
 }
