@@ -34,3 +34,19 @@ We are at the very beginning of the journey. The basics are being set and the id
 * JavaScript
 * Images
 * Typography files
+
+## Storage
+This site stores information using LocalStorage (think cookies). It is just used to enhance the tale.
+
+### What is stored
+The name you enter is stored and information related to the tale. This is such things as the name you give the droid that accompanies you and items you collect along the tale.
+
+### How is the information used
+The information is used to enhance the tale. The tale will be customized to you, so you are the main character. Items are stored to unlock new paths as you read. 
+
+### Where is the information stored
+The information is stored on your local device. I do not collect the information on your device or store it anywhere else. Others reading the tale will not see your information. This allows the tale to be read online or offline if you dowload it. 
+
+This does mean if you have multiple devices they information is not shared between them. You will need to create the information again. Also if you read the tale on GitHub and then download the tale to your device to read, the information stored while reading on GitHub is not transferred to your download version.
+
+If you clear your cookies and storage information on your device, it will delete the information stored. 
