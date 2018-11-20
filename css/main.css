@@ -191,6 +191,9 @@ a:active {
 .boxed {
   border: 1px solid #545252;
   padding: .4rem;
+  width: 11.5rem;
+  border-radius: .2rem;
+  margin: .5rem;
 }
 
 .subHeader {
@@ -226,5 +229,3 @@ a:active {
     margin: .3rem .3rem;
   }
 }
-
-
