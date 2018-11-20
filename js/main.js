@@ -1,6 +1,7 @@
-//Global Variables
+/*****************VARIABLES*****************/
 var htReaders = [new Reader()];;
 var htCurrent = 0;
+var verifyLoad = 0;
 
 var you = document.getElementsByClassName('you');
 var ai = document.getElementsByClassName('ai');

@@ -1,4 +1,4 @@
-//Global Variables
+/*****************VARIABLES*****************/
 var readerNames = document.getElementById('readerNames');
 var addReader = document.getElementById('addReader');
 var newReader = document.getElementById('newReader');

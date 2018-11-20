@@ -1,17 +1,16 @@
 /*****************ON PAGE LOAD*****************/
 window.onload = function () {
-  var verify = 0;
   if (localStorage.htReaders !== null && localStorage.htReaders !== undefined) {
     loadReaders();
-    verify++;
+    verifyLoad++;
   }
 
   if (localStorage.htCurrent !== null && localStorage.htCurrent !== undefined) {
     loadCurrent();
-    verify++;
+    verifyLoad++;
   }
   
-  if (verify==2) {
+  if (verifyLoad==2) {
     changeNames();
   }
 }
