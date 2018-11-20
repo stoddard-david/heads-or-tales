@@ -106,6 +106,7 @@ input {
   border: none;
   border-bottom: 2px #545252 solid;
   padding: .05rem;
+  width: 7rem;
 }
 /********* LINKS *********/
 a {
@@ -117,7 +118,7 @@ a {
 }
 
 a:link {
-  color: #D6B261;
+  color: #B28521;
   transition: .33s;
 }
 
@@ -126,7 +127,7 @@ a:visited {
 }
 
 a:hover, a:focus {
-  color: #B28521;
+  color: #C230B0;
 }
 
 a:active {
