@@ -139,6 +139,10 @@ a:active {
   align-items: flex-end;
 }
 
+.beginAgain {
+  align-self: center;
+}
+
 .pageHeader {
   display: flex;
   align-items: center;
