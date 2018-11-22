@@ -6,9 +6,7 @@ function changeAI() {
   htReaders[htCurrent].AI = aiName.value;
   
   if (verifyLoad==2) {
-    for (i=0; i<ai.length; i++) {
-      ai[i].innerHTML = htReaders[htCurrent].AI;
-    }
+    changeClassContent(ai, htReaders[htCurrent].AI);
     localStorage.htReaders = JSON.stringify(htReaders);
   }
 }

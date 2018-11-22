@@ -25,10 +25,18 @@ function loadCurrent() {
 
 function changeNames() {
   var i=0
-  for (i=0; i<you.length; i++) {
-    you[i].innerHTML = htReaders[htCurrent].name;
-  }
-  for (i=0; i<ai.length; i++) {
-    ai[i].innerHTML = htReaders[htCurrent].AI;
+  changeClassContent(you, htReaders[htCurrent].name);
+  changeClassContent(ai, htReaders[htCurrent].AI);
+  //for (i=0; i<you.length; i++) {
+  //  you[i].innerHTML = htReaders[htCurrent].name;
+  //}
+  //for (i=0; i<ai.length; i++) {
+  //  ai[i].innerHTML = htReaders[htCurrent].AI;
+  //}
+}
+
+function changeClassContent(classArray, content) {
+  for (i=0; i<classArray.length; i++) {
+    classArray[i].innerHTML = content;
   }
 }

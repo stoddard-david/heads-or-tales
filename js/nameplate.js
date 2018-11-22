@@ -9,7 +9,7 @@ function addNewReader() {
     htCurrent = htReaders.length;
     htReaders[htCurrent] = new Reader();
 
-    htReaders[htCurrent].name = newReader.value;
+    htReaders[htCurrent].name = trim(newReader.value);
     newReader.value = ""
 
     var createOption = document.createElement('option');
