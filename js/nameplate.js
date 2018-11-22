@@ -5,44 +5,39 @@ var newReader = document.getElementById('newReader');
 
 /*****************FUNCTIONS*****************/
 function addNewReader() {
-  if (trim(newReader.value!="")) {
+  if (newReader.value.trim()!="") {
     htCurrent = htReaders.length;
     htReaders[htCurrent] = new Reader();
 
-    htReaders[htCurrent].name = trim(newReader.value);
+    htReaders[htCurrent].name = newReader.value.trim();
     newReader.value = ""
 
-    var createOption = document.createElement('option');
-    createOption.id = 'name' + htCurrent;
-    createOption.value = htCurrent;
-
-    var textnode = document.createTextNode(htReaders[htCurrent].name); //Creates text to go in the new element
-    createOption.appendChild(textnode); //Places the element inside an element, as last child
-
-    readerNames.appendChild(createOption); 
+    addSelectionOptions(htCurrent);  
     readerNames.value = htCurrent;
-
-    localStorage.htReaders = JSON.stringify(htReaders);
-    localStorage.htCurrent = JSON.stringify(htCurrent);
+    saveLocalStorage();
   }
 }
 
 function populateNames() {
   for (i = 1; i<htReaders.length; i++) {
+    addSelectionOptions(i)
+  }
+}
+
+function addSelectionOptions(optionIndex) {
     var createOption = document.createElement('option');
-    createOption.id = 'name' + i;
-    createOption.value = i;
+    createOption.id = 'name' + optionIndex;
+    createOption.value = optionIndex;
       
-    var textnode = document.createTextNode(htReaders[i].name); //Creates text to go in the new element
-    createOption.appendChild(textnode); //Places the element inside an element, as last child
+    var textnode = document.createTextNode(htReaders[optionIndex].name);
+    createOption.appendChild(textnode);
 
     readerNames.appendChild(createOption);
-  }
 }
 
 function changeReader() {
   htCurrent = readerNames.value;
-  localStorage.htCurrent = JSON.stringify(htCurrent);
+  saveLocalStorage();
 }
 
 /*****************EVENTS*****************/

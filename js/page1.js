@@ -3,11 +3,13 @@ var aiName = document.getElementById('aiName');
 
 /*****************FUNCTIONS*****************/
 function changeAI() {
-  htReaders[htCurrent].AI = aiName.value;
-  
-  if (verifyLoad==2) {
+  if (aiName.value.trim()!="") {
+    htReaders[htCurrent].AI = aiName.value.trim();
     changeClassContent(ai, htReaders[htCurrent].AI);
-    localStorage.htReaders = JSON.stringify(htReaders);
+    
+    if (verifyLoad==2) {
+      saveLocalStorage();
+    }
   }
 }
 
