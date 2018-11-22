@@ -110,11 +110,9 @@ input {
 }
 /********* LINKS *********/
 a {
-  display: block;
   transition: color .2s;
   font-weight: bold;
-  text-align: right;
-  padding-top: .66rem;
+  padding: .2rem 0;
 }
 
 a:link {
@@ -135,6 +133,12 @@ a:active {
 }
 
 /********* CLASSES *********/
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .pageHeader {
   display: flex;
   align-items: center;

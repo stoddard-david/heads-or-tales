@@ -5,24 +5,26 @@ var newReader = document.getElementById('newReader');
 
 /*****************FUNCTIONS*****************/
 function addNewReader() {
-  htCurrent = htReaders.length;
-  htReaders[htCurrent] = new Reader();
+  if (trim(newReader.value!="")) {
+    htCurrent = htReaders.length;
+    htReaders[htCurrent] = new Reader();
 
-  htReaders[htCurrent].name = newReader.value;
-  newReader.value = ""
-  
-  var createOption = document.createElement('option');
-  createOption.id = 'name' + htCurrent;
-  createOption.value = htCurrent;
+    htReaders[htCurrent].name = newReader.value;
+    newReader.value = ""
 
-  var textnode = document.createTextNode(htReaders[htCurrent].name); //Creates text to go in the new element
-  createOption.appendChild(textnode); //Places the element inside an element, as last child
+    var createOption = document.createElement('option');
+    createOption.id = 'name' + htCurrent;
+    createOption.value = htCurrent;
 
-  readerNames.appendChild(createOption); 
-  readerNames.value = htCurrent;
-  
-  localStorage.htReaders = JSON.stringify(htReaders);
-  localStorage.htCurrent = JSON.stringify(htCurrent);
+    var textnode = document.createTextNode(htReaders[htCurrent].name); //Creates text to go in the new element
+    createOption.appendChild(textnode); //Places the element inside an element, as last child
+
+    readerNames.appendChild(createOption); 
+    readerNames.value = htCurrent;
+
+    localStorage.htReaders = JSON.stringify(htReaders);
+    localStorage.htCurrent = JSON.stringify(htCurrent);
+  }
 }
 
 function populateNames() {
