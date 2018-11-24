@@ -220,6 +220,13 @@ a:active {
   text-align: center;
 }
 
+.video {
+  display: block;
+  max-width: 1200px;
+  max-height: 628px;
+  margin: 0 auto;
+}
+
 /********* IDS *********/
 #largeLogo {
   width: 11rem;
