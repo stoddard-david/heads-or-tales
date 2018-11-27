@@ -132,6 +132,10 @@ a:active {
   color: #936F8E;
 }
 
+hr {
+  clear: both;
+}
+
 /********* CLASSES *********/
 .options {
   display: flex;
@@ -225,6 +229,12 @@ a:active {
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
+}
+
+.imgLeft {
+  float: left;
+  padding-right: .5rem;
+  width: 200px;
 }
 
 /********* IDS *********/
