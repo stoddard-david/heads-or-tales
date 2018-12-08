@@ -12,6 +12,7 @@ function Reader() {
   this.name = '';
   this.page = 1;
   this.AI = 'Alfred';
+  this.unlocks = [];
 }
 
 /*****************FUNCTIONS*****************/
