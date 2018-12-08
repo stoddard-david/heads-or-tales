@@ -238,6 +238,45 @@ hr {
   width: 200px;
 }
 
+.flip {
+  animation: flipflop 8s linear infinite;
+}
+
+.flop {
+  animation: flipflop 8s linear -4s infinite;
+}
+
+@keyframes flipflop {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  30% {
+    visibility: visible;
+    opacity: 1;
+  }
+  40% {
+    visibility: visible;
+    opacity: 0;
+  }
+  41% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  89% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  90% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 /********* IDS *********/
 #largeLogo {
   width: 11rem;
