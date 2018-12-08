@@ -30,6 +30,7 @@ window.onload = function () {
   
   if (verifyLoad==2) {
     changeNames();
+    setBookmark();
     aiName.value = htReaders[htCurrent].AI;
   }
 }

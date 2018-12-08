@@ -10,8 +10,9 @@ var ai = document.getElementsByClassName('ai');
 //Reader Objects
 function Reader() {
   this.name = '';
-  this.page = 1;
   this.AI = 'Alfred';
+  this.page = 1;
+  this.bookmark = 0;
   this.unlocks = [];
 }
 

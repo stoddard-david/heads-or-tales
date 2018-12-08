@@ -12,5 +12,6 @@ window.onload = function () {
   
   if (verifyLoad==2) {
     changeNames();
+    setBookmark();
   }
 }

@@ -2,6 +2,7 @@
 var readerNames = document.getElementById('readerNames');
 var addReader = document.getElementById('addReader');
 var newReader = document.getElementById('newReader');
+var continueReading = document.getElementById('continueReading');
 
 /*****************FUNCTIONS*****************/
 function addNewReader() {
@@ -15,6 +16,7 @@ function addNewReader() {
     addSelectionOptions(htCurrent);  
     readerNames.value = htCurrent;
     saveLocalStorage();
+    hideBookmark();
   }
 }
 
@@ -38,6 +40,21 @@ function addSelectionOptions(optionIndex) {
 function changeReader() {
   htCurrent = readerNames.value;
   saveLocalStorage();
+  if (htReaders[htCurrent].bookmark != 0) {
+    viewBookmark();
+  } else {
+    hideBookmark();
+  }
+}
+
+function viewBookmark() {
+  continueReading.href = 'pages/page' + htReaders[htCurrent].bookmark + '.html';
+  continueReading.innerHTML = 'Continue Reading on Page ' + htReaders[htCurrent].bookmark;
+  continueReading.classList.remove('hidden');
+}
+
+function hideBookmark() {
+  continueReading.classList.add('hidden');
 }
 
 /*****************EVENTS*****************/
@@ -54,5 +71,9 @@ window.onload = function () {
   if (localStorage.htCurrent !== null && localStorage.htCurrent !== undefined) {
     loadCurrent();
     readerNames.value = htCurrent;
+  }
+  
+  if (htCurrent != 0 && htReaders[htCurrent].bookmark != 0) {
+    viewBookmark();
   }
 }
